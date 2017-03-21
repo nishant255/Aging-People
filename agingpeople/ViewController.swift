@@ -30,6 +30,8 @@ extension ViewController: UITableViewDataSource {
         return people.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PersonCell", for: indexPath)
         cell.textLabel?.text = self.people[indexPath.row]
